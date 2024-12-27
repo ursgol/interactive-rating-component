@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BGCOLOR-ORANGE: hsl(25, 97%, 53%);
+  --BGCOLOR-WHITE: hsl(0, 0%, 100%);
+  --BGCOLOR-GRAY: hsl(217, 12%, 63%);
+  --BGCOLOR-DARK-BLUE: hsl(213, 19%, 18%);
+  --BGCOLOR-VERY-DARK-BLUE: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Overpass", serif;
+  background-color: var(--BGCOLOR-VERY-DARK-BLUE);
+  color: var(--BGCOLOR-GRAY);
+  display: flex;
+  flex-direction: column;
+  margin: 27vh auto;
+}
+
+h1 {
+  color: var(--BGCOLOR-WHITE);
+  margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+}
+
+main {
+  background-color: var(--BGCOLOR-DARK-BLUE);
+  margin: 0 1.5rem;
+  min-height: 45vh;
+  border-radius: 30px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.rating li {
+  list-style: none;
+  background-color: rgba(66, 65, 65, 0.337);
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin: 8px;
+  opacity: 0.7;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.star-circle {
+  background-color: rgba(66, 65, 65, 0.337);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 8px;
+  margin: 2rem;
+  border-radius: 50%;
+}
+.rating li:hover {
+  background-color: var(--BGCOLOR-ORANGE);
+  color: var(--BGCOLOR-VERY-DARK-BLUE);
+}
+
+#submit-btn {
+  background-color: var(--BGCOLOR-ORANGE);
+  color: var(--BGCOLOR-VERY-DARK-BLUE);
+  text-align: center;
+  padding: 10px 20px;
+  width: 80%;
+  margin: 2rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+}
+
+.thank-you-img {
+  width: 50%;
+  height: 50%;
+  margin-top: 1rem;
+}
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate-p {
+  color: var(--BGCOLOR-ORANGE);
+  font-weight: bold;
+  background-color: rgb(58, 58, 58);
+  padding: 10px 20px;
+  margin: 2rem;
+  border-radius: 30px;
+}
+.appreciate-p {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 50vw;
+    margin: 0 25vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 40vw;
+    margin: 0 30vw;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 30vw;
+    margin: 0 35vw;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  main {
+    width: 20vw;
+    margin: 0 40vw;
+  }
+}
